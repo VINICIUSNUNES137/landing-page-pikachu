@@ -22,19 +22,100 @@ body {
     padding-right: var(--space-default);
     padding-bottom: 24px;
     padding-left: var(--space-default);
+    font-family: 'Righteous', cursive;
+
 }
 
 header {
-    background-color: olive;
     height: 48px;
 }
 
+.logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--secundary-color);
+    font-size: 2rem;
+
+}
+
 main {
-    background-color: aqua;
     flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.pikachu-image {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+
+
+
+}
+
+.title {
+    grid-column: 1/-1;
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;    
+} 
+
+.title__text {
+font-size: 20vw;
+color: var(--white);
+
+}
+
+.title__transparent {
+    font-size: 24vw;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-35%);
+    color: #FFFFFF20;
+}
+
+
+
+.description {
+    grid-column: 1/7;
+    place-self: center start;
+    color: var(--secundary-color);
+}
+
+.description__title {
+    font-size: 4rem;
+}
+
+.description__text {
+    font-size: 1.2rem;
+    width: 500px;
+
+
+}
+
+.action {
+
+    grid-column: 7/-1;
+    place-self: center end;
+    background-color: var(--secundary-color);
+    height: 100px;
+    width: 411px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 3rem;
+    text-decoration: none;
+
 }
 
 footer {
-
-    background-color: orange;
+    text-align: center;
+    color: var(--secundary-color);
 }
