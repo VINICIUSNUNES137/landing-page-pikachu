@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --primary-color:#F5CF06;
+    --secundary-color:#8E4106;
+    --white:#FFFFFF;
+    --space-default:70px;
+
+}
+
+body {
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--space-default);
+    padding-right: var(--space-default);
+    padding-bottom: 24px;
+    padding-left: var(--space-default);
+}
+
+header {
+    background-color: olive;
+    height: 48px;
+}
+
+main {
+    background-color: aqua;
+    flex-grow: 1;
+}
+
+footer {
+
+    background-color: orange;
+}
