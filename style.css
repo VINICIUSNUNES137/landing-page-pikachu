@@ -20,7 +20,7 @@ body {
   padding-right: var(--space-default);
   padding-bottom: 24px;
   padding-left: var(--space-default);
-  font-family: "Righteous", cursive;
+  font-family: 'Righteous', cursive;
 }
 
 header {
@@ -110,39 +110,31 @@ footer {
   :root {
     --space-default: 30px;
   }
-
   main {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1fr);
   }
-
   .pikachu-image {
     transform: translate(-50%, -60%);
   }
-
   .title {
     place-self: start center;
   }
-
   .description {
     grid-row: 2;
     grid-column: 1/-1;
     place-self: center;
     text-align: center;
   }
-
   .action {
-    grid-column: 1;
-    place-self: center;
-    grid-row: 2/3;
+    grid-row: 2;
+    grid-column: 1/-1;
     place-self: end center;
   }
-
   footer {
     display: none;
   }
 }
-  @media (max-widt: 640px) {
-  
+@media (max-width: 640px) {
   .pikachu-image {
     width: 90vw;
     transform: translate(-50%, -50%);
@@ -150,13 +142,16 @@ footer {
   .title {
     transform: translateY(10%);
   }
-  .description__text {
-    display: none;
-  }
   .description__title {
     font-size: 10vw;
+  }
+  .description__text {
+    display: none;
   }
   .action {
     width: 100%;
   }
-    }
+  .description__title {
+    z-index: 1000;
+  }
+}
