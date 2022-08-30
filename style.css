@@ -80,11 +80,15 @@ main {
 
 .description__title {
   font-size: 4rem;
+  position: absolute;
+  transform: translateY(-90%);
+  z-index: +1;
 }
 
 .description__text {
   font-size: 1.2rem;
   width: 500px;
+  padding-bottom: 2%;
 }
 
 .action {
@@ -106,7 +110,7 @@ footer {
   color: var(--secundary-color);
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1200px) {
   :root {
     --space-default: 30px;
   }
@@ -114,7 +118,7 @@ footer {
     grid-template-columns: repeat(1fr);
   }
   .pikachu-image {
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -70%);
   }
   .title {
     place-self: start center;
@@ -125,6 +129,12 @@ footer {
     place-self: center;
     text-align: center;
   }
+
+  .description__title {
+    transform: translateY(0%);
+    position: relative;
+  }
+
   .action {
     grid-row: 2;
     grid-column: 1/-1;
@@ -150,8 +160,5 @@ footer {
   }
   .action {
     width: 100%;
-  }
-  .description__title {
-    z-index: 1000;
   }
 }
