@@ -140,9 +140,9 @@ footer {
   footer {
     display: none;
   }
-
+}
   @media (max-widt: 640px) {
-  }
+  
   .pikachu-image {
     width: 90vw;
     transform: translate(-50%, -50%);
@@ -159,4 +159,4 @@ footer {
   .action {
     width: 100%;
   }
-}
+    }
